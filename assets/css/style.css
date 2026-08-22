@@ -193,6 +193,12 @@ p:last-child{margin-bottom:0}
 }
 .person-list a{text-decoration:none}
 .person-list a:hover{color:var(--accent)}
+.person-list__name{
+  color:var(--ink);
+  display:inline-block;
+  min-width:11.5rem;
+  padding-right:.75rem;
+}
 
 .footer-mark{
   max-width:307px;
@@ -212,6 +218,10 @@ p:last-child{margin-bottom:0}
   font-size:.8125rem;
   color:var(--body);
 }
+.site-footer__contact{margin:0 0 .35rem;font-size:.9375rem}
+.site-footer__contact a{text-decoration:none}
+.site-footer__contact a:hover{color:var(--accent)}
+.site-footer__legal{margin:0}
 .site-footer a{color:inherit}
 .site-footer a:hover{color:var(--accent)}
 
@@ -254,6 +264,8 @@ p:last-child{margin-bottom:0}
   .site-nav li:first-child a{border-top:0}
 
   .lead-quote{margin-top:1.75rem;padding-left:20px}
+  .person-list__name{display:block;min-width:0;padding-right:0}
+  .person-list li{line-height:1.75;padding-bottom:.5rem}
 }
 
 @media (prefers-reduced-motion:reduce){
