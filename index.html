@@ -3,18 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>partyangels</title>
-<meta name="description" content="Organizace akcí a produkční práce. Konference a firemní akce, hudební produkce, divadelní a filmová produkce, soukromé akce.">
+<title>Party Angels — organizace akcí a produkční práce</title>
+<meta name="description" content="Organizace akcí a produkční práce na míru — konference a firemní akce, hudební produkce, divadelní a filmová produkce, soukromé akce. Bez typizovaných balíčků.">
 <link rel="canonical" href="https://www.partyangels.cz/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Party Angels">
-<meta property="og:title" content="partyangels">
-<meta property="og:description" content="Organizace akcí a produkční práce. Řekněte nám vaše představy a my je naplníme.">
+<meta property="og:title" content="Party Angels — organizace akcí a produkční práce">
+<meta property="og:description" content="Nehledejte u nás seznam typizovaných akcí. Řekněte nám vaše představy a my je naplníme.">
 <meta property="og:url" content="https://www.partyangels.cz/">
 <meta property="og:image" content="https://www.partyangels.cz/assets/img/hero-1200.jpg">
 <meta property="og:locale" content="cs_CZ">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Vanda Tyrychtrová a Iva Kuchařová, zakladatelky Party Angels">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 
 <link rel="icon" href="assets/img/favicon.png" sizes="any">
 <link rel="apple-touch-icon" href="assets/img/favicon.png">
@@ -25,16 +29,116 @@
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"LocalBusiness",
-  "name":"Party Angels",
-  "url":"https://www.partyangels.cz/",
-  "email":"angels@partyangels.cz",
-  "description":"Organizace akcí a produkční práce.",
-  "address":{"@type":"PostalAddress","addressCountry":"CZ"},
-  "employee":[
-    {"@type":"Person","name":"Iva Kuchařová","telephone":"+420724104892","email":"angels@partyangels.cz"},
-    {"@type":"Person","name":"Vanda Tyrychtrová","telephone":"+420724981198","email":"angels@partyangels.cz"}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.partyangels.cz/#organization",
+      "name": "Party Angels",
+      "url": "https://www.partyangels.cz/",
+      "email": "angels@partyangels.cz",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.partyangels.cz/assets/img/logo-big-1200.png",
+        "width": 1200,
+        "height": 496
+      },
+      "image": "https://www.partyangels.cz/assets/img/hero-1200.jpg",
+      "description": "Party Angels organizují akce a zajišťují produkční práce na míru – konference a firemní akce, hudební produkci, divadelní a filmovou produkci a soukromé akce. Nenabízejí typizované balíčky, každou akci staví podle přání klienta.",
+      "slogan": "Děláme ve svém životě to, co nám jde nejlépe – organizujeme!",
+      "areaServed": { "@type": "Country", "name": "Česká republika" },
+      "knowsLanguage": "cs",
+      "knowsAbout": [
+        "organizace akcí",
+        "produkční práce",
+        "konference a firemní akce",
+        "hudební produkce",
+        "divadelní produkce",
+        "filmová produkce",
+        "svatby a soukromé oslavy",
+        "moderování akcí"
+      ],
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Iva Kuchařová",
+          "telephone": "+420724104892",
+          "email": "angels@partyangels.cz",
+          "worksFor": { "@id": "https://www.partyangels.cz/#organization" }
+        },
+        {
+          "@type": "Person",
+          "name": "Vanda Tyrychtrová",
+          "telephone": "+420724981198",
+          "email": "angels@partyangels.cz",
+          "worksFor": { "@id": "https://www.partyangels.cz/#organization" }
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "poptávky a organizace akcí",
+          "email": "angels@partyangels.cz",
+          "telephone": "+420724104892",
+          "availableLanguage": "cs"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Služby Party Angels",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Konference a firemní akce",
+              "description": "Konference, zákaznické dny, firemní výjezdy a vánoční večírky. Pomoc s mailingem, komunikací se zákazníky a zajištění doprovodného programu."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Hudební produkce",
+              "description": "Organizace koncertů, hudebních a tanečních vystoupení. Produkční zajištění natáčení videoklipu či osobního medailonku."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Divadelní a filmová produkce",
+              "description": "Organizační a produkční řízení natáčení hudebního videoklipu či filmu, produkce divadelní hry."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Soukromé akce",
+              "description": "Křty knih, vernisáže, výstavy, svatby a rodinné oslavy. Příprava harmonogramu i moderování akce."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.partyangels.cz/#website",
+      "url": "https://www.partyangels.cz/",
+      "name": "Party Angels",
+      "inLanguage": "cs",
+      "publisher": { "@id": "https://www.partyangels.cz/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.partyangels.cz/#webpage",
+      "url": "https://www.partyangels.cz/",
+      "name": "Party Angels – organizace akcí a produkční práce",
+      "isPartOf": { "@id": "https://www.partyangels.cz/#website" },
+      "about": { "@id": "https://www.partyangels.cz/#organization" },
+      "inLanguage": "cs"
+    }
   ]
 }
 </script>
