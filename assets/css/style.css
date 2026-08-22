@@ -30,8 +30,8 @@
   --fs-quote:1.5rem;  /* 24px   */
   --fs-nav:.95rem;    /* 15.2px */
 
-  --font:Metropolis,"Metropolis Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
-         "Apple Color Emoji","Noto Color Emoji",sans-serif;
+  --font:Metropolis,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+         "Helvetica Neue",Arial,"Apple Color Emoji","Noto Color Emoji",sans-serif;
 }
 
 *,*::before,*::after{box-sizing:border-box}
@@ -170,6 +170,9 @@ p:last-child{margin-bottom:0}
 
 .text-center{text-align:center}
 
+.lead-mail{text-decoration:none;display:inline-block}
+.lead-mail:hover{color:var(--accent)}
+
 /* --- Obrázky ----------------------------------------------------- */
 .figure{margin:0}
 .figure img{width:100%}
@@ -266,6 +269,15 @@ p:last-child{margin-bottom:0}
   .lead-quote{margin-top:1.75rem;padding-left:20px}
   .person-list__name{display:block;min-width:0;padding-right:0}
   .person-list li{line-height:1.75;padding-bottom:.5rem}
+
+  /* Prst není kurzor — na dotykových displejích potřebují odkazy
+     na telefon a e-mail cíl kolem 44 px. */
+  .person-list a,
+  .site-footer__contact a,
+  .lead-mail{
+    display:inline-block;
+    padding-block:.5rem;
+  }
 }
 
 @media (prefers-reduced-motion:reduce){
